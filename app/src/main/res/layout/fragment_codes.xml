@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/light_green"
+        android:orientation="vertical"
+        android:padding="@dimen/_20sdp"
+        tools:context=".fragments.MyCodeFragmentFragment">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_30sdp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="@dimen/_10sdp"
+            app:cardElevation="@dimen/_10sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:gravity="center"
+                    android:text="@string/activate_your_code"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_16sdp" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.budiyev.android.codescanner.CodeScannerView
+                        android:id="@+id/scanner_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_200sdp"
+                        android:layout_margin="@dimen/_15sdp"
+                        app:autoFocusButtonColor="@android:color/white"
+                        app:autoFocusButtonVisible="true"
+                        app:flashButtonColor="@android:color/white"
+                        app:flashButtonVisible="true"
+                        app:frameAspectRatioHeight="1"
+                        app:frameAspectRatioWidth="1"
+                        app:frameColor="@android:color/white"
+                        app:frameCornersRadius="0dp"
+                        app:frameCornersSize="50dp"
+                        app:frameSize="0.75"
+                        app:frameThickness="2dp"
+                        app:maskColor="#77000000" />
+
+                </FrameLayout>
+
+
+                <ImageView
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_80sdp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:src="@drawable/ic_qr"
+                    android:visibility="gone" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnLogin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    android:background="@drawable/button_bg"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:paddingHorizontal="@dimen/_60sdp"
+                    android:text="@string/scan"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_12sdp" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</layout>

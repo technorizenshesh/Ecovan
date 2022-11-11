@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".fragments.HomeFragment"
+            android:background="@color/light_gray"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/tv_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="@string/board"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_18sdp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/top_green_cornors"
+                android:layout_marginTop="@dimen/_120sdp"
+                android:padding="@dimen/_15sdp"
+                android:orientation="vertical"
+                >
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/_65sdp"
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".5"
+                        android:orientation="vertical"
+                        android:background="@drawable/rec_cornor_15"
+                        android:gravity="center"
+                        android:layout_marginRight="@dimen/_8sdp"
+                        android:id="@+id/llCard"
+                        >
+                        <ImageView
+                            android:layout_width="@dimen/_40sdp"
+                            android:layout_height="@dimen/_40sdp"
+                            android:src="@drawable/ic_blue_tickets"
+                            android:layout_marginTop="@dimen/_30sdp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/_15sdp"
+                            android:textColor="@color/blue"
+                            android:fontFamily="@font/montserrat_semibold"
+                            android:layout_marginTop="@dimen/_20sdp"
+                            android:layout_marginBottom="@dimen/_15sdp"
+                            android:text="@string/my_tickets"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llProducts"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".5"
+                        android:orientation="vertical"
+                        android:background="@drawable/rec_cornor_15"
+                        android:gravity="center"
+                        android:layout_marginLeft="@dimen/_8sdp"
+                        >
+                        <ImageView
+                            android:id="@+id/iv_cart"
+                            android:layout_width="@dimen/_40sdp"
+                            android:layout_height="@dimen/_40sdp"
+                            android:src="@drawable/ic_cart"
+                            android:layout_marginTop="@dimen/_30sdp"
+                            />
+                        <TextView
+                            android:id="@+id/tvFoot"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/_15sdp"
+                            android:textColor="@color/green"
+                            android:fontFamily="@font/montserrat_semibold"
+                            android:layout_marginTop="@dimen/_20sdp"
+                            android:layout_marginBottom="@dimen/_15sdp"
+                            android:text="@string/ecosocious"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    >
+
+                    <LinearLayout
+                        android:id="@+id/llNews"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".5"
+                        android:orientation="vertical"
+                        android:background="@drawable/rec_cornor_15"
+                        android:gravity="center"
+                        android:layout_marginRight="@dimen/_8sdp"
+                        >
+                        <ImageView
+                            android:layout_width="@dimen/_40sdp"
+                            android:layout_height="@dimen/_40sdp"
+                            android:src="@drawable/ic_news"
+                            android:layout_marginTop="@dimen/_30sdp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/_15sdp"
+                            android:textColor="@color/blue"
+                            android:fontFamily="@font/montserrat_semibold"
+                            android:layout_marginTop="@dimen/_20sdp"
+                            android:layout_marginBottom="@dimen/_15sdp"
+                            android:text="@string/news"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llContact"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".5"
+                        android:orientation="vertical"
+                        android:background="@drawable/rec_cornor_15"
+                        android:gravity="center"
+                        android:layout_marginLeft="@dimen/_8sdp"
+                        >
+                        <ImageView
+                            android:layout_width="@dimen/_40sdp"
+                            android:layout_height="@dimen/_40sdp"
+                            android:src="@drawable/ic_call"
+                            android:layout_marginTop="@dimen/_30sdp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/_15sdp"
+                            android:textColor="@color/orange"
+                            android:fontFamily="@font/montserrat_semibold"
+                            android:layout_marginTop="@dimen/_20sdp"
+                            android:layout_marginBottom="@dimen/_15sdp"
+                            android:text="@string/contact_us"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnChangeLang"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rec_cornor_5"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:text="@string/change_language"
+                    android:textSize="@dimen/_15sdp"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:textColor="@color/green"
+                    android:padding="@dimen/_5sdp"
+                    />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rec_cornor_5"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:text="@string/signout"
+                    android:textSize="@dimen/_15sdp"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:textColor="@color/green"
+                    android:padding="@dimen/_5sdp"
+                    />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</layout>

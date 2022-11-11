@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".SelectLangActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+          <RelativeLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="@dimen/_20sdp"
+              >
+              <ImageView
+                  android:id="@+id/ivBack"
+                  android:layout_width="@dimen/_20sdp"
+                  android:layout_height="@dimen/_20sdp"
+                  android:src="@drawable/ic_back"
+                  android:layout_marginLeft="@dimen/_15sdp"
+                   android:layout_centerVertical="true"
+                  android:visibility="gone"
+                  />
+
+              <TextView
+                  android:id="@+id/tv_header"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center"
+                  android:text="@string/select_language"
+                  android:gravity="center"
+                  android:textColor="@color/black"
+                  android:textSize="@dimen/_20sdp"
+                  android:textStyle="bold" />
+
+          </RelativeLayout>
+
+
+
+            <RadioGroup
+                android:id="@+id/radio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_60sdp"
+                >
+
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/radio1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/english"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_16sdp"
+            android:layout_marginRight="@dimen/_16sdp"
+            android:textSize="@dimen/_14sdp"
+            android:layoutDirection="rtl"/>
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/radio2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/spanish"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginLeft="@dimen/_16sdp"
+                android:layout_marginRight="@dimen/_16sdp"
+                android:textSize="@dimen/_14sdp"
+                android:layoutDirection="rtl"/>
+
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_login"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="@dimen/_55sdp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:text="@string/done"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:visibility="gone"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_20sdp"
+            android:textStyle="bold"
+            app:backgroundTint="@color/purple_500"
+            app:cornerRadius="@dimen/_20sdp" />
+
+    </RelativeLayout>
+
+
+</layout>

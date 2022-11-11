@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "459165214791",
+    "project_id": "ecovan-4a8ab",
+    "storage_bucket": "ecovan-4a8ab.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:459165214791:android:c09c47f021b502b8ace962",
+        "android_client_info": {
+          "package_name": "com.ecoven"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "459165214791-reau6cctcc5b2ano4ouif1m4v3m6nkb6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ecoven",
+            "certificate_hash": "be053cf6e79e8a61ba7f5be6681e8978782d7b5e"
+          }
+        },
+        {
+          "client_id": "459165214791-7mole1k0j5iormme78jhr2buvh8b0k3v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkR8YCOilHFNuwnfRDt3GxtbMClRCOrVk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "459165214791-7mole1k0j5iormme78jhr2buvh8b0k3v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

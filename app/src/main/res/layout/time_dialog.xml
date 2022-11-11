@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        app:cardElevation="@dimen/_10sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/_5sdp"
+        app:cardCornerRadius="@dimen/_5sdp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            >
+            <ImageView
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:src="@drawable/info"
+                android:layout_gravity="center"
+                app:tint="@color/green" />
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:orientation="vertical"
+        android:background="@drawable/rec_cornor_15"
+        android:padding="@dimen/_15sdp">
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Monday to Friday: 08:30 AM\n 14:00 hrs "
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:fontFamily="@font/montserrat_medium"
+            android:textSize="@dimen/_15sdp"
+            android:textColor="@color/black"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/to_closed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="To close"
+            android:textAllCaps="false"
+            android:fontFamily="@font/montserrat_semibold"
+            android:background="@drawable/button_bg"
+            android:textColor="@color/white"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:textSize="@dimen/_14sdp"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

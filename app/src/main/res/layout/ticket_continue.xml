@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/rec_cornor_15"
+        android:padding="@dimen/_15sdp"
+        >
+<ImageView
+    android:layout_width="@dimen/_20sdp"
+    android:layout_height="@dimen/_20sdp"
+    android:src="@drawable/ic_close"
+    android:layout_gravity="end"
+    android:padding="@dimen/_3sdp"
+    android:id="@+id/ivCancel"
+    app:tint="@color/black" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="This ticket has an expiration date,\n it is recommended at the moment\nof the purchase. "
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/montserrat_regular"
+            android:textSize="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Do you want to continue?"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/montserrat_medium"
+            android:textSize="@dimen/_13sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:textColor="@color/black"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnNo"
+                android:layout_width="0dp"
+                android:layout_weight=".5"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:textAllCaps="false"
+                android:fontFamily="@font/montserrat_semibold"
+                android:background="@drawable/button_bg_gray"
+                android:textColor="@color/black"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:textSize="@dimen/_14sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnYEs"
+                android:layout_width="0dp"
+                android:layout_weight=".5"
+                android:layout_height="wrap_content"
+                android:text="Yes"
+                android:textAllCaps="false"
+                android:fontFamily="@font/montserrat_semibold"
+                android:background="@drawable/button_bg_blue"
+                android:textColor="@color/white"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:textSize="@dimen/_14sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

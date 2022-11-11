@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.ecoven.fragments.HomeFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_navigation_home_to_boardFragment"
+            app:destination="@id/boardFragment" />
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_profile"
+            app:destination="@id/navigation_profile" />
+        <action
+            android:id="@+id/action_navigation_home_to_newsDetailFragment"
+            app:destination="@id/newsDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.ecoven.fragments.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile">
+        <action
+            android:id="@+id/action_navigation_profile_to_changePassFragment"
+            app:destination="@id/changePassFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/navigation_codes"
+        android:name="com.ecoven.fragments.CodesFragment"
+        android:label="Search"
+        tools:layout="@layout/fragment_codes" >
+
+    </fragment>
+
+     <fragment
+        android:id="@+id/navigation_green_footprint"
+        android:name="com.ecoven.fragments.GreenFootprintFragment"
+        android:label="Cart"
+        tools:layout="@layout/fragment_green_footprint" >
+     </fragment>
+
+    <fragment
+        android:id="@+id/navigation_products"
+        android:name="com.ecoven.fragments.ProductsFragment"
+        android:label="User"
+        tools:layout="@layout/fragment_products" >
+
+        <action
+            android:id="@+id/action_navigation_products_to_radeemTicketFragment"
+            app:destination="@id/radeemTicketFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_maquinas"
+        android:name="com.ecoven.fragments.MaquinasFragment"
+        android:label="User"
+        tools:layout="@layout/fragment_maquinas" >
+
+    </fragment>
+    <fragment
+        android:id="@+id/myTicketsFragment"
+        android:name="com.ecoven.fragments.MyTicketsFragment"
+        android:label="MyTicketsFragment" />
+    <fragment
+        android:id="@+id/contactUsFragment"
+        android:name="com.ecoven.fragments.ContactUsFragment"
+        android:label="fragment_contact_us"
+        tools:layout="@layout/fragment_contact_us" />
+    <fragment
+        android:id="@+id/myCodeFragmentFragment"
+        android:name="com.ecoven.fragments.MyCodeFragmentFragment"
+        android:label="fragment_my_code_fragment"
+        tools:layout="@layout/fragment_my_code_fragment" />
+    <fragment
+        android:id="@+id/newsFragment"
+        android:name="com.ecoven.fragments.NewsFragment"
+        android:label="fragment_news"
+        tools:layout="@layout/fragment_news" >
+        <action
+            android:id="@+id/action_newsFragment_to_newsDetailFragment"
+            app:destination="@id/newsDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/radeemTicketFragment"
+        android:name="com.ecoven.fragments.RadeemTicketFragment"
+        android:label="fragment_radeem_ticket"
+        tools:layout="@layout/fragment_radeem_ticket" />
+    <fragment
+        android:id="@+id/boardFragment"
+        android:name="com.ecoven.fragments.BoardFragment"
+        android:label="BoardFragment" >
+        <action
+            android:id="@+id/action_boardFragment_to_myTicketsFragment"
+            app:destination="@id/myTicketsFragment" />
+        <action
+            android:id="@+id/action_boardFragment_to_navigation_products"
+            app:destination="@id/navigation_products" />
+        <action
+            android:id="@+id/action_boardFragment_to_newsFragment"
+            app:destination="@id/newsFragment" />
+        <action
+            android:id="@+id/action_boardFragment_to_contactUsFragment"
+            app:destination="@id/contactUsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/changePassFragment"
+        android:name="com.ecoven.fragments.ChangePassFragment"
+        android:label="ChangePassFragment" />
+    <fragment
+        android:id="@+id/newsDetailFragment"
+        android:name="com.ecoven.fragments.NewsDetailFragment"
+        android:label="NewsDetailFragment" />
+
+</navigation>

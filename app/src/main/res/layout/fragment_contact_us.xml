@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/_15sdp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ivBack"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:src="@drawable/ic_back" />
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="@string/contact_us"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_15sdp" />
+
+        </RelativeLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/email_text_input"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_60sdp"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_medium"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/green"
+                android:inputType="textEmailAddress"
+                android:imeOptions="actionNext"
+                android:backgroundTint="@color/green"
+                android:hint="@string/email" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_medium"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/green"
+                android:inputType="textEmailAddress"
+                android:imeOptions="actionNext"
+                android:backgroundTint="@color/green"
+                android:hint="@string/name" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etDescription"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_100sdp"
+                android:fontFamily="@font/montserrat_medium"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/green"
+                android:inputType="textEmailAddress"
+                android:imeOptions="actionNext"
+                android:gravity="top"
+                android:backgroundTint="@color/green"
+                android:hint="@string/description" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSubit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/submit"
+            android:fontFamily="@font/montserrat_semibold"
+            android:background="@drawable/button_bg"
+            android:textColor="@color/white"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:textSize="@dimen/_12sdp"
+            />
+
+    </LinearLayout>
+
+<!--
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/light_gray"
+            android:orientation="vertical"
+            tools:context=".fragments.HomeFragment">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_150sdp"
+                android:background="@drawable/top_green_cornors"
+                android:orientation="vertical"
+                android:padding="@dimen/_15sdp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_80sdp"
+                    android:layout_toRightOf="@id/iv_bulb"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:text="Queremos saber tu opinion"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_13sdp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_25sdp"
+                    android:layout_toRightOf="@id/iv_bulb"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:gravity="center"
+                    android:text="Hello friensts this is a dummy text\n for which you have to show\n some demo view and text"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_13sdp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_22sdp"
+                    android:layout_toRightOf="@id/iv_bulb"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:text="Contact us at demo@email.com"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_13sdp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_25sdp"
+                    android:layout_toRightOf="@id/iv_bulb"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:gravity="center"
+                    android:text="Hello friensts this is a dummy text\n for which you have to show"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_13sdp" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_165sdp"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:background="@drawable/rec_cornor_15"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_10sdp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/ivBack"
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:src="@drawable/ic_back" />
+
+                        <TextView
+                            android:id="@+id/tvTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:fontFamily="@font/montserrat_bold"
+                            android:text="Contact Us"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_15sdp" />
+
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:layout_width="@dimen/_120sdp"
+                        android:layout_height="@dimen/_60sdp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:src="@drawable/ic_logo" />
+
+
+                     <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="@dimen/_25sdp"
+                            android:src="@drawable/ic_browser" />
+
+                        <ImageView
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="@dimen/_25sdp"
+                            android:src="@drawable/ic_facebook"
+                            app:tint="@color/blue" />
+
+                        <ImageView
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="@dimen/_25sdp"
+                            android:src="@drawable/ic_insta" />
+
+                        <ImageView
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/ic_location" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_167sdp"
+                    android:background="@color/green"
+                    android:paddingHorizontal="@dimen/_25sdp"
+                    android:paddingVertical="@dimen/_8sdp"
+                    android:text="Aprende a user la app"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_15sdp"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+-->
+
+</layout>

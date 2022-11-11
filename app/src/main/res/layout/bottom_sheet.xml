@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:minHeight="@dimen/_200sdp"
+    android:fitsSystemWindows="true"
+    android:layout_marginHorizontal="@dimen/_10sdp"
+    android:background="@drawable/top_white_cornors"
+    app:cardCornerRadius="@dimen/_30sdp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+       <View
+           android:layout_width="@dimen/_35sdp"
+           android:layout_height="@dimen/_3sdp"
+           android:layout_marginTop="@dimen/_15sdp"
+           android:layout_gravity="center_horizontal"
+           android:background="@color/light_gray"/>
+
+
+            <TextView
+                android:id="@+id/tvFrequent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="All"
+                android:layout_centerHorizontal="true"
+                android:textSize="@dimen/_13sdp"
+                android:textColor="@color/black"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/_20sdp"
+                />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="@color/light_gray"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_below="@+id/tvFrequent"
+                />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Arauco Mall"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/_13sdp"
+            android:textColor="@color/black"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_20sdp"
+            />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:background="@color/light_gray"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_below="@+id/tvFrequent"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pudauel"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/_13sdp"
+            android:textColor="@color/black"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_20sdp"
+            />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:background="@color/light_gray"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_below="@+id/tvFrequent"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AICP San Jaguan"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/_13sdp"
+            android:textColor="@color/black"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_20sdp"
+            />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:background="@color/light_gray"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_below="@+id/tvFrequent"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="QR of the andes"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/_13sdp"
+            android:textColor="@color/black"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_20sdp"
+            />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:background="@color/light_gray"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_below="@+id/tvFrequent"
+            android:layout_marginBottom="@dimen/_20sdp"
+            />
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".fragments.NewsFragment"
+        android:padding="@dimen/_15sdp"
+        android:background="@color/light_gray"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ivBack"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:src="@drawable/ic_back"/>
+
+            <ImageView
+                android:id="@+id/ivUpload"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_upload"/>
+
+            <ImageView
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:src="@drawable/ic_save"
+                android:layout_toLeftOf="@id/ivUpload"
+                android:layout_marginRight="@dimen/_10sdp"
+                />
+
+        </RelativeLayout>
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/_15sdp"
+                >
+
+                <TextView
+                    android:id="@+id/tvChannel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_16sdp"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:textColor="@color/black"
+                    android:text="Japan Times"/>
+                <TextView
+                    android:id="@+id/tvEditor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_11sdp"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textColor="@color/black"
+                    android:text="by Santoshi Ramanad"/>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_150sdp"
+                    app:cardCornerRadius="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@id/ivNews"
+                        android:scaleType="fitXY"
+                        />
+
+                </androidx.cardview.widget.CardView>
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_18sdp"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="New Coronovirous impact\n spreads throughout japan"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_11sdp"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:textColor="@color/blue"
+                        android:text="#Coronavirus"
+                        android:visibility="gone"
+                        />
+                    <TextView
+                        android:id="@+id/tvTimeAgo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_11sdp"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:textColor="@color/black"
+                        android:text="@string/dot"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    >
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rvTags"/>
+
+                 <!--   <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingVertical="@dimen/_4sdp"
+                        android:paddingHorizontal="@dimen/_8sdp"
+                        android:background="@drawable/rec_lightgray_cornor_5"
+                        android:textSize="@dimen/_12sdp"
+                        android:textColor="@color/black"
+                        android:text="#Coronavirus"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingVertical="@dimen/_4sdp"
+                        android:paddingHorizontal="@dimen/_8sdp"
+                        android:background="@drawable/rec_lightgray_cornor_5"
+                        android:textSize="@dimen/_12sdp"
+                        android:textColor="@color/black"
+                        android:text="#Hakodia"
+                        />-->
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvDesciption"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_12sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textColor="@color/black"
+                    android:text="The number of cases in hakodia increases day by day and it at 38 at the end of the day and their is no."/>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_12sdp"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:text="More in Japan News"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_12sdp"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:textColor="@color/blue"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:layout_alignParentRight="true"
+                        android:text="View All"/>
+
+                </RelativeLayout>
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/newsRelated"/>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+</layout>

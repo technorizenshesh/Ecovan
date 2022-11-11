@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.HomeAct">
+
+
+    <fragment
+        android:id="@+id/nav_host_fragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/relative"
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/mobile_navigation" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_60sdp"
+    android:layout_alignParentBottom="true"
+    android:background="@color/green"
+    >
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight=".5"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@drawable/rec_cornor_5"
+        android:layout_margin="@dimen/_5sdp"
+        android:id="@+id/llProfile"
+        >
+        <ImageView
+            android:layout_width="@dimen/_17sdp"
+            android:layout_height="@dimen/_17sdp"
+            android:src="@drawable/ic_profile"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/profile"
+            android:textSize="@dimen/_10sdp"
+            android:fontFamily="@font/montserrat_medium"
+            android:textColor="@color/green"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight=".5"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@drawable/rec_cornor_5"
+        android:layout_margin="@dimen/_5sdp"
+        android:id="@+id/llCodes"
+        >
+        <ImageView
+            android:layout_width="@dimen/_17sdp"
+            android:layout_height="@dimen/_17sdp"
+            android:src="@drawable/ic_codes"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Codes"
+            android:textSize="@dimen/_10sdp"
+            android:fontFamily="@font/montserrat_medium"
+            android:textColor="@color/orange"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight=".5"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@drawable/rec_cornor_5"
+        android:layout_margin="@dimen/_5sdp"
+        android:padding="@dimen/_2sdp"
+        android:id="@+id/llGreen"
+        >
+        <ImageView
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:src="@drawable/ic_blue_bulb"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Green\nFootprint"
+            android:textSize="@dimen/_10sdp"
+            android:fontFamily="@font/montserrat_medium"
+            android:textColor="@color/blue"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight=".5"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@drawable/rec_cornor_5"
+        android:layout_margin="@dimen/_5sdp"
+        android:id="@+id/llProducts"
+        >
+        <ImageView
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:src="@drawable/ic_cart"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Products"
+            android:textSize="@dimen/_10sdp"
+            android:fontFamily="@font/montserrat_medium"
+            android:textColor="@color/green"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight=".5"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@drawable/rec_cornor_5"
+        android:layout_margin="@dimen/_5sdp"
+        android:id="@+id/llMas"
+        >
+        <ImageView
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:src="@drawable/ic_maqainas"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Machine"
+            android:textSize="@dimen/_10sdp"
+            android:fontFamily="@font/montserrat_medium"
+            android:textColor="@color/green"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="invisible"
+        >
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/nav_view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_60sdp"
+            android:elevation="@dimen/_5sdp"
+            app:menu="@menu/bottom_nav_menu" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

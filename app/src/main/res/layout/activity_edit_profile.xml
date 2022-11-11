@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/light_gray"
+        android:orientation="vertical"
+        android:padding="@dimen/_15sdp"
+        tools:context=".activities.SignupAct">
+
+        <include
+            android:id="@+id/header"
+            layout="@layout/layou_header"/>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="@dimen/_5sdp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingHorizontal="@dimen/_15sdp"
+                        android:paddingVertical="@dimen/_20sdp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:id="@+id/iv_profile_image"
+                                android:layout_width="@dimen/_80sdp"
+                                android:layout_height="@dimen/_80sdp"
+                                android:background="@drawable/circle_image_bg" />
+
+                            <ImageView
+                                android:layout_width="@dimen/_30sdp"
+                                android:layout_height="@dimen/_30sdp"
+                                android:layout_alignEnd="@id/iv_profile_image"
+                                android:layout_alignRight="@id/iv_profile_image"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:layout_marginRight="-12dp"
+                                android:src="@drawable/ic_camera" />
+
+                        </RelativeLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/name_text_input"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_40sdp">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/name_edit_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="@color/green"
+                                android:fontFamily="@font/montserrat_medium"
+                                android:hint="@string/name"
+                                android:inputType="text"
+                                android:textColor="@color/green"
+                                android:textSize="@dimen/_12sdp" />
+
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/email_text_input"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10sdp">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/email_edit_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="@color/green"
+                                android:fontFamily="@font/montserrat_medium"
+                                android:hint="@string/email"
+                                android:inputType="textEmailAddress"
+                                android:textColor="@color/green"
+                                android:textSize="@dimen/_12sdp" />
+
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/num_text_input"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10sdp">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/num_edit_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="@color/green"
+                                android:fontFamily="@font/montserrat_medium"
+                                android:hint="Mobile"
+                                android:inputType="number"
+                                android:textColor="@color/green"
+                                android:textSize="@dimen/_12sdp" />
+
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/num_text_input1"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10sdp">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/num_edit_text1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="@color/green"
+                                android:fontFamily="@font/montserrat_medium"
+                                android:hint="@string/transport_card_number"
+                                android:inputType="number"
+                                android:textColor="@color/green"
+                                android:textSize="@dimen/_12sdp" />
+
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <CheckBox
+                            android:id="@+id/radioButton1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="20dp"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:text="Appear in green footprint ?"
+                            android:textColor="@color/dark_gray"
+                            android:textSize="@dimen/_12sdp" />
+
+                        <TextView
+                            android:id="@+id/tv_header"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_15sdp"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:text="@string/to_enter_the_ranking_again_you_must_n_contact_admin"
+                            android:textColor="@color/green"
+                            android:textSize="@dimen/_11sdp"
+                            android:textStyle="bold"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnSave"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:background="@drawable/button_bg"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:text="@string/save"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_12sdp" />
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+</layout>

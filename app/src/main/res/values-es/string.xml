@@ -1,0 +1,20 @@
+<resources>
+
+    <string name="app_name">Eco Ven</string>
+    <string name="email">Correo electrónico</string>
+     <string name="forgot_pass">¿Has olvidado tu contraseña?</string>
+    <string name="login">Iniciar sesión</string>
+    <string name="send">Enviar</string>
+    <string name="name">Nombre</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hola</string>
+    <string name="enter_name">Intoduce tu nombre</string>
+    <string name="enter_email">Intoduce tu Correo electrónico</string>
+    <string name="enter_valid_email">Introduce un correo electrónico válido</string>
+    <string name="please_enter_pass">Intoduce una contraseña</string>
+    <string name="please_enter_confirm_pass">Confirma la contraseña</string>
+    <string name="pass_and_confirm_pass_not_macthed">Las contraseñas no coinciden.</string>
+    <string name="edit_profile">Editar perfil</string>
+    <string name="contact_us">Contáctanos</string>
+
+</resources>
